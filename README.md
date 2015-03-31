@@ -5,7 +5,7 @@ A VIM plugin that refreshes a Firefox page which has FF-Remote-Control activated
 This plugin allows refreshing a Firefox tab which has the FF-Remote-Control Firefox extension activated, directly from VIM.
 
 # Installation
-To use, install the plugin using Vundle by adding the following line between your vundle#begin() and vundle#end() lines.
+To use, install the plugin using Vundle by adding the following line between your `call vundle#begin()` and `call vundle#end()` lines.
 ```vim
 Plugin 'harikvpy/refreshbrowser'
 ```
@@ -13,4 +13,4 @@ Then add a convenient keyboard shortcut to your .vimrc file pressing which would
 ```vim
 nmap <leader>r :call RefreshFirefox()<CR>
 ``` 
-With this in place, after I make any changes to my HTML plage, I can quickly press the <leader>r key combination to refresh the Firefox tab that has the page loaded.
+With this in place, after I make any changes to my HTML plage, I can quickly press the `<leader>r` key combination to refresh the Firefox tab that has the page loaded.
