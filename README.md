@@ -2,7 +2,7 @@
 A VIM plugin that refreshes a Firefox page which has FF-Remote-Control activated
 
 # Description
-This plugin implmenets the client side of the FF-Remote-Control Firefox extension.
+This plugin allows refreshing a Firefox tab which has the FF-Remote-Control Firefox extension activated, directly from VIM.
 
 # Installation
 To use, install the plugin using Vundle by adding the following line between your vundle#begin() and vundle#end() lines.
