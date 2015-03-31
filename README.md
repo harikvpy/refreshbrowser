@@ -1,10 +1,10 @@
-# refreshbrowser
+# Refreshbrowser
 A VIM plugin that refreshes a Firefox page which has FF-Remote-Control activated
 
-# description
+# Description
 This plugin implmenets the client side of the FF-Remote-Control Firefox extension.
 
-# installation
+# Installation
 To use, install the plugin using Vundle by adding the following line between your vundle#begin() and vundle#end() lines.
 ```vim
 Plugin 'harikvpy/refreshbrowser'
