@@ -41,7 +41,7 @@ endfunction
 " To use, just bind a hotkey to this function like above and use the hotkey to force
 " the Chrome page to reload after making changes to file types that are not auto-detected
 " to have changed.
-function! ForceAutorefresh()
+function! ForceAutoRefresh()
 py << EOF                                                                                                           
 import httplib       
 conn = httplib.HTTPConnection("localhost", 32000)
@@ -50,4 +50,4 @@ response = conn.getresponse()
 response.read()      
 conn.close()
 EOF
- 33 endfunction   
+endfunction   
