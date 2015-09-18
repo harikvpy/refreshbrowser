@@ -31,3 +31,23 @@ s.send('reload\n')
 s.close()
 EOF
 endfunction
+
+"
+" Companion VIM function to be used together with django-autorefresh.
+" 
+" Defines a function, invoking which would set the files changed state variable to True
+" forcing the autorefresh Chrome extension to reload the page.
+"
+" To use, just bind a hotkey to this function like above and use the hotkey to force
+" the Chrome page to reload after making changes to file types that are not auto-detected
+" to have changed.
+function! ForceAutorefresh()
+py << EOF                                                                                                           
+import httplib       
+conn = httplib.HTTPConnection("localhost", 32000)
+conn.request("POST", "/", "hello")
+response = conn.getresponse()
+response.read()      
+conn.close()
+EOF
+ 33 endfunction   
