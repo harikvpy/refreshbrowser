@@ -42,7 +42,7 @@ endfunction
 " the Chrome page to reload after making changes to file types that are not auto-detected
 " to have changed.
 function! ForceAutoRefresh()
-py << EOF                                                                                                           
+py << EOF
 import httplib       
 conn = httplib.HTTPConnection("localhost", 32000)
 conn.request("POST", "/", "hello")
@@ -50,4 +50,4 @@ response = conn.getresponse()
 response.read()      
 conn.close()
 EOF
-endfunction   
+endfunction
